@@ -1,9 +1,3 @@
-<!--
-setup: 
-  docker:
-    image: csc_webapps_redis_workshop
--->
-
 # Redis
 
 Redis is an open source, in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams.
