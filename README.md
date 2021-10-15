@@ -7,7 +7,7 @@ To use redis, like any other database, you need to have it installed on your mac
 After you installed the redis server, you should start it (if not running it as a service). To do that run `redis-server` command in the terminal below before continuing to next steps of the tutorial.
 
 ```bash|{type: 'terminal'}
-redis-serve &
+redis-server &
 
 ```
 
