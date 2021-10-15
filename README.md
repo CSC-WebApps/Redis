@@ -10,6 +10,11 @@ Redis is an open source, in-memory data structure store, used as a database, cac
 
 To use redis, like any other database, you need to have it installed on your machine.
 
+After you installed the redis server, you should start it (if not running it as a service). To do that run `redis-server` command in the terminal below before continuing to next steps of the tutorial.
+
+```bash|{type: 'terminal'}
+```
+
 Then you can use a redis client to connect to the redis server. Since we are using Node.js, we will use the [`redis`](https://www.npmjs.com/package/redis) npm package. To add redis as a dependency in your npm module, run:
 
 ```
