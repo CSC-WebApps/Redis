@@ -8,6 +8,7 @@ After you installed the redis server, you should start it (if not running it as 
 
 ```bash|{type: 'terminal'}
 redis-serve &
+
 ```
 
 Then you can use a redis client to connect to the redis server. Since we are using Node.js, we will use the [`redis`](https://www.npmjs.com/package/redis) npm package. To add redis as a dependency in your npm module, run:
@@ -48,6 +49,7 @@ Redis also provides a command line utility called `redis-cli` that can be used t
 ```| {type: 'terminal'}
 sleep 5
 redis-cli
+
 ```
 
 Hint: [see here](https://redis.io/topics/quickstart#check-if-redis-is-working).
