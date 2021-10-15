@@ -10,7 +10,7 @@ RUN apt-get install -y \
     git \
     build-essential
 
-RUN apt-get install redis-server
+RUN apt-get install -y redis-server
 
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN apt-get install -y nodejs
