@@ -7,6 +7,7 @@ To use redis, like any other database, you need to have it installed on your mac
 After you installed the redis server, you should start it (if not running it as a service). To do that run `redis-server` command in the terminal below before continuing to next steps of the tutorial.
 
 ```bash|{type: 'terminal'}
+redis-serve &
 ```
 
 Then you can use a redis client to connect to the redis server. Since we are using Node.js, we will use the [`redis`](https://www.npmjs.com/package/redis) npm package. To add redis as a dependency in your npm module, run:
@@ -32,14 +33,21 @@ client.on("error", function(error) {
   console.error(error);
 });
 
+// setting greeting as key, and Hello CSC342 as value
 client.set("greeting", "Hello CSC342", redis.print);
+
+// get the value
 client.get("greeting", redis.print);
+
+client.quit();
 ```
 
 
 Redis also provides a command line utility called `redis-cli` that can be used to send commands to redis. Here is a live `redis-cli` session, can you send a command below to retrieve the value that we set for `greeting` key in the code above?
 
-```| {type: 'terminal', 'command': 'redis-cli'}
+```| {type: 'terminal'}
+sleep 5
+redis-cli
 ```
 
 Hint: [see here](https://redis.io/topics/quickstart#check-if-redis-is-working).
